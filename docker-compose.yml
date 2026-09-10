@@ -40,7 +40,7 @@ services:
       - ./backend:/app
       - ./docker/backend/entrypoint.sh:/entrypoint.sh:ro
     ports:
-      - "8000:8000"
+      - "8990:8000"
     depends_on:
       db:
         condition: service_healthy
